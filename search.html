@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Products Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 50px;
+        }
+
+        #searchBar {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .result {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .result h3 {
+            margin: 0;
+        }
+
+        .result p {
+            margin: 5px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Search Healthcare Products</h1>
+        <input type="text" id="searchBar" placeholder="Enter product name or keyword..." oninput="searchProducts()">
+        <div id="results"></div>
+    </div>
+
+    <script src="web.js"></script>
+
+</body>
+</html>
